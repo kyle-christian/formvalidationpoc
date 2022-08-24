@@ -1,0 +1,96 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #454555;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.container {
+    width: 400px;
+    height: 500px;
+    margin: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #E6E6FA;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    color: #454555;
+}
+
+input, textarea, button {
+    margin: 10px;
+    width: 80%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: #454555;
+}
+
+input {
+    height: 40px;
+    padding-left: 10px;
+}
+
+input:focus, textarea:focus {
+    outline: 0;
+}
+
+textarea {
+    padding: 10px 0 0 10px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+
+}
+
+#error {
+    color: red;
+    visibility: hidden;
+}
+/* div {
+    border: 1px solid black;
+    width: 30%;
+} */
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
